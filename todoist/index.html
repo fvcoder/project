@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="./css/root.css">
+</head>
+<body>
+    <div id="root" class="todoapp">
+        <header class="header">
+           <h1>To-do list</h1>
+           <input type="text" class="new-todo" name="new-todo" placeholder="My new task is...">
+        </header>
+        <main class="main">
+           <input type="checkbox" class="toggle-all" id="toggleAll" wfd-id="id1"><label for="toggleAll" class="">Mark all as complete</label>
+           <ul class="todo-list">
+           </ul>
+        </main>
+        <footer class="footer">
+           <div class="todo-count"><strong>1</strong><span> items left</span></div>
+           <ul class="filters">
+              <li><a class="">All</a></li>
+              <li><a class="selected">Active</a></li>
+              <li><a class="">Completed</a></li>
+           </ul>
+        </footer>
+     </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
