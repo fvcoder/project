@@ -19,7 +19,7 @@ async function createProject(name = "newProject", dir = "") {
         if (!dir) return;
         
         const newName = name.replace(/ /g, "")
-        const newDir = resolve(__dirname, '../projects', newName)
+        const newDir = resolve(__dirname, '../projects', name.replace(/ /g, "-"))
         const newPkg = resolve(newDir, 'package.json')
         await copy(dir, newDir)
 
