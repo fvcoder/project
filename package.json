@@ -4,9 +4,9 @@
   "description": "Un conjunto de proyectos que realizo para practicar mis habilidades",
   "scripts": {
     "create": "node ./scripts/create",
-    "buid": "turbo run build",
+    "build": "turbo run build",
     "publish": "node scripts/publish.js",
-    "dev": "turbo run dev --scope=todoist"
+    "dev": "turbo run dev --scope=facebookdropdown"
   },
   "keywords": [],
   "author": "",

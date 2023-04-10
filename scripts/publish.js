@@ -35,8 +35,6 @@ async function build() {
     for (const p of projects) {
         await copy(resolve(p.path, !p.isBuild ? 'src': 'dist'), resolve(buildPath, p.folderName))
 
-        // TODO generar una pagina html donde se declaren todos los projectos + su ruta en github
-
         listHtml += `
             <ol class="list-group list-group-numbered">
                 <li class="list-group-item d-flex justify-content-between align-items-start">
