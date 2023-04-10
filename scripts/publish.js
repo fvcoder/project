@@ -36,7 +36,6 @@ async function build() {
         await copy(resolve(p.path, !p.isBuild ? 'src': 'dist'), resolve(buildPath, p.folderName))
 
         listHtml += `
-            <ol class="list-group list-group-numbered">
                 <li class="list-group-item d-flex justify-content-between align-items-start">
                     <div class="ms-2 me-auto">
                         <a href="./${p.folderName}" class="text-decoration-none fw-bold d-block">${p.name}
@@ -51,7 +50,6 @@ async function build() {
                         view in Github
                     </a>
                 </li>
-            </ol>
         `
     }
 

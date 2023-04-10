@@ -5,6 +5,7 @@
   "scripts": {
     "create": "node ./scripts/create",
     "build": "turbo run build",
+    "prepublish": "pnpm run build",
     "publish": "node scripts/publish.js",
     "dev": "turbo run dev --scope=facebookdropdown"
   },
