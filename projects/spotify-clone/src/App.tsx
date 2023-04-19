@@ -1,6 +1,8 @@
 import { HiHeart, HiHome, HiLibrary, HiOutlinePlus, HiSearch } from "react-icons/hi";
 
 import { Navbar } from "./components/navbar";
+import { Section } from "./components/section";
+import { playlistMain } from "./data/playlist";
 import { Container, Control, Main, MenuLeft } from "./styles/container.style";
 import { Menu, MenuPlaylist } from "./styles/menu.style";
 import { Body } from "./ui/body";
@@ -61,6 +63,9 @@ export default function App() {
 				</MenuLeft>
 				<Body>
 					<Navbar />
+					{playlistMain.map((x, i) => (
+						<Section {...x} key={`section-${i}`} />
+					))}
 				</Body>
 			</Main>
 			<Control></Control>
