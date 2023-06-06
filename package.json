@@ -7,7 +7,7 @@
     "build": "turbo run build",
     "prepublish": "pnpm run build",
     "publish": "node scripts/publish.js",
-    "dev": "turbo run dev --scope=spotify-clone"
+    "dev": "turbo run dev --scope=platzi-react-intro"
   },
   "keywords": [],
   "author": "",
