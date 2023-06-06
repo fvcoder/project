@@ -4,7 +4,7 @@
   "description": "Practica del curso https://platzi.com/cursos/react/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build  --base https://fvcoder.github.io/project/platzi-react-intro/",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
