@@ -1,6 +1,6 @@
 {
   "name": "platzi-react-intro",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Practica del curso https://platzi.com/cursos/react/",
   "scripts": {
     "dev": "vite",

@@ -1,24 +1,24 @@
 import './App.css'
+import { TodoCounter } from "./components/todoCounter"
+import { TodoSearch } from "./components/todoSearch"
+import { TodoList } from "./components/todoList"
+import { TodoItem } from './components/todoItem'
 
 function App() {
   return (
-    <>  
-    <TodoItem />
-    <TodoItem />
-    <TodoItem />
-    <TodoItem />
-    </>
+    <div className="App">
+      <TodoCounter />
+      <TodoSearch />
+      <TodoList>
+        <TodoItem />
+        <TodoItem />
+        <TodoItem />
+        <TodoItem />
+      </TodoList>
+    </div>
   )
 }
 
-function TodoItem() {
-  return (
-    <li>
-      <span>v</span>
-      <p>hola tarea</p>
-      <span>x</span>
-    </li>
-  )
-}
+
 
 export default App
